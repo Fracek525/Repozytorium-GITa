@@ -1,14 +1,14 @@
-import React from 'react' ;
+import React from 'react';
 
 
 const ExpensesFilter = (props) => {
-  const expensesFilterHandler = (event)=>{
+  const expensesFilterHandler = (event) => {
     props.onChangeFilter(event.target.value);
   }
 
   return (
     <div>
-      <label> Filter by year </label>
+      <label> Filter by year: </label>
       <select>
         <option value='2019'> 2019 </option>
         <option value='2020'> 2020 </option>
